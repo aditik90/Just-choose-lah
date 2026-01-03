@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Choose Lah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    
+    :root {
+      --lavender: #B19CD9;
+      --lavender-dark: #a08cc9;
+      --pastel-green: #77DD77;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fcfcfd;
+      color: #1e293b;
+    }
+
+    .custom-shadow {
+      shadow-color: rgba(177, 156, 217, 0.15);
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: var(--lavender);
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(177, 156, 217, 0.4);
+      border: 3px solid white;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
